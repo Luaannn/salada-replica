@@ -50,76 +50,71 @@ const salads = [
   },
 ];
 
+const SaladCard = ({ salad }: { salad: typeof salads[0] }) => (
+  <div className="salad-card">
+    <img 
+      src={salad.image} 
+      alt={salad.title} 
+      className="w-full aspect-[4/5] object-cover"
+    />
+    <div className="p-3 md:p-4 text-center">
+      <h3 className="text-olive-dark font-bold text-base md:text-lg leading-tight">
+        {salad.title}
+        {salad.subtitle && <><br /><span className="font-normal text-sm md:text-base">{salad.subtitle}</span></>}
+      </h3>
+      <p className="text-muted-foreground text-xs md:text-sm mt-2">
+        Conservação: {salad.conservation}<br />
+        Calorias: {salad.calories}
+      </p>
+    </div>
+  </div>
+);
+
+const CTAButton = () => (
+  <div className="flex justify-center my-6 md:my-8">
+    <a 
+      href="#price" 
+      className="cta-button w-full max-w-md text-center"
+    >
+      QUERO AS RECEITAS!
+    </a>
+  </div>
+);
+
 const SaladsSection = () => {
   return (
-    <section className="py-8 md:py-12">
-      <div className="container max-w-4xl mx-auto">
-        <h2 className="section-title mb-8">
+    <section className="py-6 md:py-12">
+      <div className="container max-w-4xl mx-auto px-4">
+        <h2 className="section-title mb-6 md:mb-8">
           ALGUMAS SALADAS<br />
           <b>QUE IRÁ PRENDER:</b>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mobile: 2 columns, Desktop: 3 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
           {salads.slice(0, 3).map((salad, index) => (
-            <div key={index} className="salad-card">
-              <img 
-                src={salad.image} 
-                alt={salad.title} 
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="text-olive-dark font-bold text-lg">
-                  {salad.title}
-                  {salad.subtitle && <><br />{salad.subtitle}</>}
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Conservação: {salad.conservation}<br />
-                  Calorias: {salad.calories}
-                </p>
-              </div>
-            </div>
+            <SaladCard key={index} salad={salad} />
           ))}
         </div>
 
-        <div className="flex justify-center my-8">
-          <a 
-            href="#price" 
-            className="cta-button w-full max-w-md text-center"
-          >
-            QUERO AS RECEITAS!
-          </a>
-        </div>
+        <CTAButton />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {salads.slice(3).map((salad, index) => (
-            <div key={index} className="salad-card">
-              <img 
-                src={salad.image} 
-                alt={salad.title} 
-                className="w-full aspect-[4/5] object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="text-olive-dark font-bold text-lg">
-                  {salad.title}
-                  {salad.subtitle && <><br />{salad.subtitle}</>}
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Conservação: {salad.conservation}<br />
-                  Calorias: {salad.calories}
-                </p>
-              </div>
-            </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+          {salads.slice(3, 6).map((salad, index) => (
+            <SaladCard key={index} salad={salad} />
           ))}
         </div>
 
-        <div className="flex justify-center mt-8">
-          <a 
-            href="#price" 
-            className="cta-button w-full max-w-md text-center"
-          >
-            QUERO AS RECEITAS!
-          </a>
+        <CTAButton />
+
+        {/* Last salad - centered */}
+        <div className="flex justify-center">
+          <div className="w-1/2 md:w-1/3">
+            <SaladCard salad={salads[6]} />
+          </div>
         </div>
+
+        <CTAButton />
       </div>
     </section>
   );
