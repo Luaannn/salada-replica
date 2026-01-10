@@ -90,8 +90,8 @@ const SaladsSection = () => {
           <b>QUE IRÁ PRENDER:</b>
         </h2>
 
-        {/* Mobile: 2 columns, Desktop: 3 columns */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+        {/* Mobile: 1 column, Desktop: 3 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {salads.slice(0, 3).map((salad, index) => (
             <SaladCard key={index} salad={salad} />
           ))}
@@ -99,7 +99,7 @@ const SaladsSection = () => {
 
         <CTAButton />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {salads.slice(3, 6).map((salad, index) => (
             <SaladCard key={index} salad={salad} />
           ))}
@@ -109,7 +109,7 @@ const SaladsSection = () => {
 
         {/* Last salad - centered */}
         <div className="flex justify-center">
-          <div className="w-1/2 md:w-1/3">
+          <div className="w-full md:w-1/3">
             <SaladCard salad={salads[6]} />
           </div>
         </div>
