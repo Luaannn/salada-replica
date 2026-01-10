@@ -1,11 +1,11 @@
 import { Check } from "lucide-react";
 
 const pains = [
-  "Preguiça de lavar e cortar salada todo dia.",
-  "Joga salada fora antes de conseguir usar.",
-  "Deixa de comer salada alguns dias da semana.",
-  "Cansou de alface e tomate.",
-  "Já come saudável, mas falha na salada.",
+  "Too lazy to wash and chop salad every day.",
+  "Throws away salad before getting to use it.",
+  "Skips eating salad some days of the week.",
+  "Tired of just lettuce and tomato.",
+  "Already eats healthy, but fails on salads.",
 ];
 
 const PainSection = () => {
@@ -13,7 +13,7 @@ const PainSection = () => {
     <section className="py-6 md:py-12 bg-olive-light">
       <div className="container max-w-4xl mx-auto px-4">
         <h3 className="text-olive-dark text-lg md:text-xl text-center mb-4 md:mb-6">
-          ISSO ACONTECE <b>COM VOCÊ?</b>
+          DOES THIS HAPPEN <b>TO YOU?</b>
         </h3>
 
         <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8 max-w-lg mx-auto">
@@ -26,18 +26,18 @@ const PainSection = () => {
         </ul>
 
         <h2 className="section-title mb-4 md:mb-6">
-          Então você precisa disso:
+          Then you need this:
         </h2>
 
         <h3 className="text-olive-dark text-lg md:text-2xl font-bold text-center mb-6 md:mb-8">
-          SALADAS NO POTE + MOLHOS<br />
-          IRRESISTÍVEIS
+          JAR SALADS + IRRESISTIBLE<br />
+          DRESSINGS
         </h3>
 
         <div className="flex justify-center">
           <img 
             src="/images/product.webp" 
-            alt="Produto completo" 
+            alt="Complete product" 
             className="w-full max-w-sm md:max-w-md rounded-xl md:rounded-2xl"
           />
         </div>

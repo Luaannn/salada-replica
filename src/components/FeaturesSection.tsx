@@ -1,13 +1,13 @@
 import { Smile, PlusCircle, Clock, ClipboardList } from "lucide-react";
 
 const features = [
-  { icon: Smile, text: "Funciona com qualquer pote" },
-  { icon: PlusCircle, text: "60 saladas deliciosas" },
-  { icon: PlusCircle, text: "Molhos irresistíveis" },
-  { icon: Smile, text: "O segredo das camadas" },
-  { icon: PlusCircle, text: "Conservação de 7 dias" },
-  { icon: Clock, text: "Prontas em 30 minutos" },
-  { icon: ClipboardList, text: "Passo a passo de preparo" },
+  { icon: Smile, text: "Works with any jar" },
+  { icon: PlusCircle, text: "60 delicious salads" },
+  { icon: PlusCircle, text: "Irresistible dressings" },
+  { icon: Smile, text: "The secret of layering" },
+  { icon: PlusCircle, text: "7-day preservation" },
+  { icon: Clock, text: "Ready in 30 minutes" },
+  { icon: ClipboardList, text: "Step-by-step preparation" },
 ];
 
 const FeaturesSection = () => {
@@ -18,8 +18,8 @@ const FeaturesSection = () => {
           <div className="absolute -left-3 md:-left-4 top-4 bottom-4 w-3 md:w-4 bg-olive-dark rounded-l-xl md:rounded-l-2xl hidden md:block" />
           
           <h2 className="section-title mb-6 md:mb-8">
-            o que você<br />
-            <b>vai eNCONTRAR:</b>
+            WHAT YOU<br />
+            <b>WILL FIND:</b>
           </h2>
 
           <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
@@ -34,7 +34,7 @@ const FeaturesSection = () => {
           <div className="flex justify-center mb-6 md:mb-8">
             <img 
               src="/images/features.webp" 
-              alt="Saladas no Pote" 
+              alt="Jar Salads" 
               className="w-full max-w-xs md:max-w-sm rounded-xl md:rounded-2xl"
             />
           </div>
@@ -43,7 +43,7 @@ const FeaturesSection = () => {
             href="#price" 
             className="cta-button w-full max-w-md mx-auto block text-center"
           >
-            QUERO AS RECEITAS!
+            I WANT THE RECIPES!
           </a>
         </div>
       </div>

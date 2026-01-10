@@ -1,51 +1,51 @@
 const salads = [
   {
     image: "/images/salad-1.webp",
-    title: "SALADA REFRESCANTE",
-    subtitle: "+ MOLHO CÍTRICO",
-    conservation: "7 dias",
+    title: "REFRESHING SALAD",
+    subtitle: "+ CITRUS DRESSING",
+    conservation: "7 days",
     calories: "100 kcal",
   },
   {
     image: "/images/salad-2.webp",
-    title: "SALADA CAPRESE",
+    title: "CAPRESE SALAD",
     subtitle: "",
-    conservation: "7 dias",
+    conservation: "7 days",
     calories: "120 kcal",
   },
   {
     image: "/images/salad-3.webp",
-    title: "SALADA CAESAR",
-    subtitle: "+ MOLHO ORIGINAL",
-    conservation: "7 dias",
+    title: "CAESAR SALAD",
+    subtitle: "+ ORIGINAL DRESSING",
+    conservation: "7 days",
     calories: "115 kcal",
   },
   {
     image: "/images/salad-4.webp",
-    title: "SALADA BIG MAC",
-    subtitle: "+ MOLHO ESPECIAL",
-    conservation: "7 dias",
+    title: "BIG MAC SALAD",
+    subtitle: "+ SPECIAL SAUCE",
+    conservation: "7 days",
     calories: "180 kcal",
   },
   {
     image: "/images/salad-5.webp",
-    title: "SALADA MEDITERRÂNEA",
-    subtitle: "+ MOLHO AGRIDOCE",
-    conservation: "7 dias",
+    title: "MEDITERRANEAN SALAD",
+    subtitle: "+ SWEET & SOUR DRESSING",
+    conservation: "7 days",
     calories: "120 kcal",
   },
   {
     image: "/images/salad-6.webp",
-    title: "SALADA TOSCANA",
-    subtitle: "+ MOLHO SICILIANO",
-    conservation: "7 dias",
+    title: "TUSCAN SALAD",
+    subtitle: "+ SICILIAN DRESSING",
+    conservation: "7 days",
     calories: "130 kcal",
   },
   {
     image: "/images/salad-7.png",
-    title: "SALADA RÚSTICA",
-    subtitle: "+ MOSTARDA E MEL",
-    conservation: "7 dias",
+    title: "RUSTIC SALAD",
+    subtitle: "+ HONEY MUSTARD",
+    conservation: "7 days",
     calories: "160 kcal",
   },
 ];
@@ -63,8 +63,8 @@ const SaladCard = ({ salad }: { salad: typeof salads[0] }) => (
         {salad.subtitle && <><br /><span className="font-normal text-sm md:text-base">{salad.subtitle}</span></>}
       </h3>
       <p className="text-muted-foreground text-xs md:text-sm mt-2">
-        Conservação: {salad.conservation}<br />
-        Calorias: {salad.calories}
+        Preservation: {salad.conservation}<br />
+        Calories: {salad.calories}
       </p>
     </div>
   </div>
@@ -76,7 +76,7 @@ const CTAButton = () => (
       href="#price" 
       className="cta-button w-full max-w-md text-center"
     >
-      QUERO AS RECEITAS!
+      I WANT THE RECIPES!
     </a>
   </div>
 );
@@ -86,8 +86,8 @@ const SaladsSection = () => {
     <section className="py-6 md:py-12">
       <div className="container max-w-4xl mx-auto px-4">
         <h2 className="section-title mb-6 md:mb-8">
-          ALGUMAS SALADAS<br />
-          <b>QUE IRÁ PRENDER:</b>
+          SOME SALADS<br />
+          <b>YOU'LL LOVE:</b>
         </h2>
 
         {/* Mobile: 1 column, Desktop: 3 columns */}
