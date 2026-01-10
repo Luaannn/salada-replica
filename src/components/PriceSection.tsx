@@ -1,0 +1,55 @@
+import { Check } from "lucide-react";
+
+const includes = [
+  { quantity: "+ 60", text: "RECEITAS DE SALADAS" },
+  { quantity: "+", text: "RECEITAS DE MOLHOS" },
+  { quantity: "+ 20", text: "RECEITAS DE SMOOTHIES" },
+  { quantity: "+ 5", text: "RECEITAS DE SHOTS MATINAIS" },
+  { quantity: "+ 15", text: "RECEITAS DE ÁGUAS SABORIZADAS" },
+];
+
+const PriceSection = () => {
+  return (
+    <section id="price" className="py-8 md:py-12">
+      <div className="container max-w-4xl mx-auto">
+        <div className="bg-cream rounded-3xl p-6 md:p-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <ul className="space-y-3">
+                {includes.map((item, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-cta-green flex-shrink-0" />
+                    <span className="text-olive-dark">
+                      <span className="font-bold">{item.quantity}</span> {item.text}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-olive-dark text-2xl md:text-3xl mb-2">
+                De <span className="line-through text-muted-foreground">R$129,00</span>…
+              </h3>
+              <p className="text-olive-dark text-lg mb-1">por 6x de R$5,66</p>
+              <p className="text-olive-dark text-xl font-bold mb-6">ou R$29,90 à vista</p>
+
+              <a 
+                href="https://conhecimentos.space/checkout" 
+                className="cta-button inline-block w-full max-w-xs"
+              >
+                COMPRAR AGORA!
+              </a>
+
+              <p className="text-cta-green font-bold text-sm mt-4 animate-pulse">
+                **OFERTA EXPIRA HOJE**
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PriceSection;
