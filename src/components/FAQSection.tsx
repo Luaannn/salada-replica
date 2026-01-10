@@ -7,44 +7,44 @@ import {
 
 const faqs = [
   {
-    question: "Como recebo minhas receitas?",
-    answer: "Assim que o pagamento for confirmado, você recebe acesso imediato pelo WhatsApp e por e-mail com todas as 60 receitas de saladas, os molhos irresistíveis e todos os bônus. Tudo disponível para você baixar e começar a usar no mesmo instante. Sem espera, sem burocracia. Qualquer dúvida, é só entrar em contato pelo e-mail: contato@nutriliacastro.site que a gente te ajuda rapidinho."
+    question: "How do I receive my recipes?",
+    answer: "As soon as your payment is confirmed, you get immediate access via WhatsApp and email with all 60 salad recipes, irresistible dressings, and all bonuses. Everything is available for you to download and start using right away. No waiting, no hassle. Any questions, just contact us at: contact@nutriliacastro.site and we'll help you quickly."
   },
   {
-    question: "O curso tem garantia?",
-    answer: "Sim! Você tem 7 dias de garantia incondicional para testar as receitas. Se não gostar por qualquer motivo, é só pedir o reembolso e devolvemos 100% do valor investido. Simples assim."
+    question: "Does the course have a guarantee?",
+    answer: "Yes! You have a 7-day unconditional guarantee to test the recipes. If you don't like it for any reason, just request a refund and we'll return 100% of the amount invested. Simple as that."
   },
   {
-    question: "Preciso de potes especiais?",
-    answer: "Não precisa! Qualquer pote que você já tem em casa funciona perfeitamente. Pode ser de plástico, de vidro, grande ou pequeno. O importante é que feche bem para manter a salada fresca. Nada de gastar dinheiro extra com equipamento."
+    question: "Do I need special jars?",
+    answer: "No need! Any jar you already have at home works perfectly. It can be plastic, glass, large or small. The important thing is that it closes well to keep the salad fresh. No need to spend extra money on equipment."
   },
   {
-    question: "As receitas incluem os molhos?",
-    answer: "Com certeza! Todas as 60 receitas já vêm com molhos específicos e deliciosos. São molhos caseiros, fáceis de fazer e que transformam completamente o sabor da salada. Você nunca mais vai precisar comprar aqueles molhos industrializados caros e cheios de conservantes."
+    question: "Do the recipes include dressings?",
+    answer: "Absolutely! All 60 recipes come with specific and delicious dressings. They are homemade dressings, easy to make and that completely transform the flavor of the salad. You'll never need to buy those expensive store-bought dressings full of preservatives again."
   },
   {
-    question: "Quanto tempo dura a salada no pote na geladeira?",
-    answer: "Quando montada corretamente seguindo o método das camadas que eu ensino, a salada dura de 5 a 7 dias fresquinha na geladeira. Isso significa que você prepara tudo no domingo e tem almoço ou jantar saudável pronto a semana toda. Zero desperdício, zero trabalho diário."
+    question: "How long does the jar salad last in the fridge?",
+    answer: "When assembled correctly following the layering method I teach, the salad lasts 5 to 7 days fresh in the refrigerator. This means you prepare everything on Sunday and have healthy lunch or dinner ready all week. Zero waste, zero daily work."
   },
   {
-    question: "Posso montar a salada toda de uma vez no fim de semana para a semana inteira?",
-    answer: "Sim, esse é exatamente o método que eu ensino! A maioria das mulheres prepara no sábado ou domingo as saladas da semana inteira em cerca de 30 minutos. É muito mais prático do que ter que picar, lavar e montar salada todo dia. Você ganha tempo, economiza energia e nunca fica sem opção saudável na correria."
+    question: "Can I prepare salads all at once on the weekend for the whole week?",
+    answer: "Yes, that's exactly the method I teach! Most people prepare their salads for the entire week on Saturday or Sunday in about 30 minutes. It's much more practical than having to chop, wash and assemble salad every day. You save time, energy and never run out of healthy options during busy times."
   },
   {
-    question: "Posso vender saladas no pote? quanto posso cobrar?",
-    answer: "Pode sim! Muitas alunas usam as receitas para vender e gerar renda extra. Dependendo da sua região e dos ingredientes, saladas no pote são vendidas entre R$ 11 e R$ 16 por pote (às vezes até mais, dependendo do tamanho e incrementos). É uma forma inteligente de transformar conhecimento em lucro."
+    question: "Can I sell jar salads? How much can I charge?",
+    answer: "Yes you can! Many students use the recipes to sell and generate extra income. Depending on your region and ingredients, jar salads are sold between $5 and $12 per jar (sometimes even more, depending on size and add-ons). It's a smart way to turn knowledge into profit."
   },
   {
-    question: "As receitas são fáceis de fazer?",
-    answer: "Super fáceis! Todas as receitas têm instruções claras e passo a passo simples. Não precisa ser expert na cozinha. Se você sabe picar, misturar e temperar, você consegue fazer. As receitas foram pensadas justamente para quem tem rotina corrida e não quer complicação."
+    question: "Are the recipes easy to make?",
+    answer: "Super easy! All recipes have clear instructions and simple step-by-step guides. You don't need to be an expert in the kitchen. If you know how to chop, mix and season, you can do it. The recipes were designed precisely for those who have a busy routine and don't want complications."
   },
   {
-    question: "Os ingredientes são fáceis de encontrar?",
-    answer: "Sim! Todas as receitas usam ingredientes simples e acessíveis que você encontra em qualquer supermercado, feira ou sacolão. Nada de ingredientes exóticos ou caros que você nunca ouviu falar. Comida de verdade, com ingredientes de verdade."
+    question: "Are the ingredients easy to find?",
+    answer: "Yes! All recipes use simple and accessible ingredients that you can find at any supermarket or grocery store. No exotic or expensive ingredients you've never heard of. Real food, with real ingredients."
   },
   {
-    question: "Preciso ter balança ou utensílios específicos?",
-    answer: "Não precisa de nada disso. Você só precisa de: Potes (os que você já tem em casa), Colheres, Uma faca e Uma tábua de corte."
+    question: "Do I need a scale or specific utensils?",
+    answer: "You don't need any of that. You only need: Jars (the ones you already have at home), Spoons, A knife and A cutting board."
   },
 ];
 
@@ -55,7 +55,7 @@ const FAQSection = () => {
         <div className="flex items-center justify-center gap-2 md:gap-4 mb-6 md:mb-8">
           <div className="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32" />
           <h1 className="text-olive-dark text-lg md:text-3xl font-bold text-center whitespace-nowrap">
-            DÚVIDAS FREQUENTES
+            FREQUENTLY ASKED QUESTIONS
           </h1>
           <div className="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32" />
         </div>

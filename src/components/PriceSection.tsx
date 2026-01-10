@@ -1,11 +1,11 @@
 import { Check } from "lucide-react";
 
 const includes = [
-  { quantity: "+ 60", text: "RECEITAS DE SALADAS" },
-  { quantity: "+", text: "RECEITAS DE MOLHOS" },
-  { quantity: "+ 20", text: "RECEITAS DE SMOOTHIES" },
-  { quantity: "+ 5", text: "RECEITAS DE SHOTS MATINAIS" },
-  { quantity: "+ 15", text: "RECEITAS DE ÁGUAS SABORIZADAS" },
+  { quantity: "+ 60", text: "SALAD RECIPES" },
+  { quantity: "+", text: "DRESSING RECIPES" },
+  { quantity: "+ 20", text: "SMOOTHIE RECIPES" },
+  { quantity: "+ 5", text: "MORNING SHOT RECIPES" },
+  { quantity: "+ 15", text: "INFUSED WATER RECIPES" },
 ];
 
 const PriceSection = () => {
@@ -16,7 +16,7 @@ const PriceSection = () => {
           {/* Product Image */}
           <img 
             src="/images/product.webp" 
-            alt="Ebook Saladas Saudáveis" 
+            alt="Healthy Salads Ebook" 
             className="w-full aspect-video object-cover"
           />
           
@@ -24,7 +24,7 @@ const PriceSection = () => {
           <div className="p-4 md:p-6">
             {/* Title */}
             <h3 className="text-olive-dark font-bold text-xl md:text-2xl text-center mb-4">
-              EBOOK SALADAS SAUDÁVEIS
+              HEALTHY SALADS EBOOK
             </h3>
 
             {/* Bullets */}
@@ -42,10 +42,10 @@ const PriceSection = () => {
             {/* Pricing */}
             <div className="text-center mb-4">
               <p className="text-olive-dark text-lg">
-                De <span className="line-through text-muted-foreground">R$129,00</span>…
+                From <span className="line-through text-muted-foreground">$49.00</span>…
               </p>
-              <p className="text-olive-dark text-sm">por 6x de R$5,66</p>
-              <p className="text-olive-dark text-xl font-bold">ou R$29,90 à vista</p>
+              <p className="text-olive-dark text-sm">for 6x of $1.99</p>
+              <p className="text-olive-dark text-xl font-bold">or $9.90 one-time</p>
             </div>
 
             {/* CTA Button */}
@@ -53,12 +53,12 @@ const PriceSection = () => {
               href="https://conhecimentos.space/checkout" 
               className="cta-button block w-full text-center"
             >
-              COMPRAR AGORA!
+              BUY NOW!
             </a>
 
             {/* Urgency */}
             <p className="text-cta-green font-bold text-xs text-center mt-4 animate-pulse">
-              **OFERTA EXPIRA HOJE**
+              **OFFER EXPIRES TODAY**
             </p>
           </div>
         </div>

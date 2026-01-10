@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
     <section className="py-8 md:py-12 overflow-hidden">
       <div className="container max-w-4xl mx-auto">
         <p className="text-olive-dark text-lg text-center mb-6">
-          <strong>Veja as mensagens</strong> que recebo quase todos os dias:
+          <strong>See the messages</strong> I receive almost every day:
         </p>
 
         {/* Marquee container */}
@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
                 >
                   <img 
                     src={testimonial} 
-                    alt={`Depoimento ${index + 1}`} 
+                    alt={`Testimonial ${index + 1}`} 
                     className="w-48 md:w-56 rounded-2xl"
                   />
                 </div>
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
                 >
                   <img 
                     src={testimonial} 
-                    alt={`Depoimento ${index + 1}`} 
+                    alt={`Testimonial ${index + 1}`} 
                     className="w-48 md:w-56 rounded-2xl"
                   />
                 </div>
