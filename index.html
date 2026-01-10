@@ -1,20 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jar Salads + Dressings | 60 Healthy Recipes</title>
-    <meta name="description" content="60 jar salad recipes you can make at home and never run out of fresh salad in your fridge, stays fresh for 7 days!" />
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Salads</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-olive">
+    
+    <!-- HeroSection -->
+    <section class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4 flex flex-col items-center">
+            <h1 class="text-olive-dark text-5xl md:text-7xl text-center mb-4 md:mb-6 uppercase hero-h1">
+                JAR SALADS + <br class="md:hidden">DRESSINGS
+            </h1>
+            <p class="text-olive-dark text-lg md:text-2xl text-center mb-6 md:mb-8 max-w-4xl hero-p">
+                <span class="font-semibold">60 RECIPES</span> to make at home and never run out of ready-made salads in your fridge, <span class="bg-yellow-100/50 px-2 rounded-lg font-bold text-olive-dark">fresh for 7 days!</span>
+            </p>
+            <img src="images/hero.webp" alt="60 Recipes for you to make at home" class="w-full max-w-sm md:max-w-lg mb-6 md:mb-8 rounded-xl md:rounded-2xl">
+            <a href="#price" class="cta-button w-full max-w-md text-center">
+                I WANT THE RECIPES!
+            </a>
+        </div>
+    </section>
 
-    <meta property="og:title" content="Jar Salads + Dressings | 60 Healthy Recipes" />
-    <meta property="og:description" content="60 jar salad recipes you can make at home and never run out of fresh salad in your fridge, stays fresh for 7 days!" />
-    <meta property="og:type" content="website" />
+    <!-- FeaturesSection -->
+    <section class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4">
+            <div class="bg-olive-light rounded-2xl md:rounded-3xl p-5 md:p-10 relative">
+                <div class="absolute -left-3 md:-left-4 top-4 bottom-4 w-3 md:w-4 bg-olive-dark rounded-l-xl md:rounded-l-2xl hidden md:block"></div>
+                
+                <h2 class="section-title mb-6 md:mb-8">
+                    WHAT YOU<br>
+                    <b>WILL FIND:</b>
+                </h2>
 
-    <meta name="twitter:card" content="summary_large_image" />
-  </head>
+                <ul class="space-y-3 md:space-y-4 mb-6 md:mb-8">
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="smile" class="feature-icon-circle flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">Works with any jar</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="plus-circle" class="feature-icon-circle flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">60 delicious salads</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feature-icon-solid flex-shrink-0 w-6 h-6">
+                            <path d="M12 2a5 5 0 0 0-5 5c0 2.76 2.24 5 5 5s5-2.24 5-5a5 5 0 0 0-5-5zm-1 10v10h2V12h-2z" fill="currentColor"/>
+                        </svg>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">Irresistible dressings</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="smile" class="feature-icon-circle flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">The secret of layering</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="plus-circle" class="feature-icon-circle flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">7-day preservation</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="clock" class="feature-icon-circle flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">Ready in 30 minutes</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="clipboard-list" class="feature-icon-solid flex-shrink-0 w-6 h-6"></i>
+                        <span class="text-olive-dark text-base md:text-xl font-medium">Step-by-step preparation</span>
+                    </li>
+                </ul>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <div class="flex justify-center mb-6 md:mb-8">
+                    <img src="images/features.webp" alt="Jar Salads" class="w-full max-w-xs md:max-w-sm rounded-xl md:rounded-2xl">
+                </div>
+
+                <a href="#price" class="cta-button w-full max-w-md mx-auto block text-center">
+                    I WANT THE RECIPES!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SaladsSection -->
+    <section class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4">
+            <h2 class="section-title mb-6 md:mb-8">
+                SOME SALADS<br>
+                <b>YOU'LL LEARN:</b>
+            </h2>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Salad 1 -->
+                <div class="salad-card">
+                    <img src="images/salad-1.webp" alt="REFRESHING SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            REFRESHING SALAD<br><span class="font-normal text-base md:text-lg">+ CITRUS DRESSING</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 100 kcal
+                        </p>
+                    </div>
+                </div>
+                <!-- Salad 2 -->
+                <div class="salad-card">
+                    <img src="images/salad-2.webp" alt="CAPRESE SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            CAPRESE SALAD
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 120 kcal
+                        </p>
+                    </div>
+                </div>
+                <!-- Salad 3 -->
+                <div class="salad-card">
+                    <img src="images/salad-3.webp" alt="CAESAR SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            CAESAR SALAD<br><span class="font-normal text-base md:text-lg">+ ORIGINAL DRESSING</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 115 kcal
+                        </p>
+                    </div>
+                </div>
+                <!-- Salad 4 -->
+                <div class="salad-card">
+                    <img src="images/salad-4.webp" alt="BIG MAC SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            BIG MAC SALAD<br><span class="font-normal text-base md:text-lg">+ SPECIAL SAUCE</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 180 kcal
+                        </p>
+                    </div>
+                </div>
+                <!-- Salad 5 -->
+                <div class="salad-card">
+                    <img src="images/salad-5.webp" alt="MEDITERRANEAN SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            MEDITERRANEAN SALAD<br><span class="font-normal text-base md:text-lg">+ SWEET & SOUR DRESSING</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 120 kcal
+                        </p>
+                    </div>
+                </div>
+                <!-- Salad 6 -->
+                <div class="salad-card">
+                    <img src="images/salad-6.webp" alt="TUSCAN SALAD" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            TUSCAN SALAD<br><span class="font-normal text-base md:text-lg">+ SICILIAN DRESSING</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            Preservation: 7 days<br>
+                            Calories: 130 kcal
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Last Salad Centered -->
+            <div class="flex justify-center mt-4 md:mt-6">
+                <div class="w-full md:w-1/3">
+                    <div class="salad-card">
+                        <img src="images/salad-7.png" alt="RUSTIC SALAD" class="w-full aspect-[4/5] object-cover">
+                        <div class="p-3 md:p-4 text-center">
+                            <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                                RUSTIC SALAD<br><span class="font-normal text-base md:text-lg">+ HONEY MUSTARD</span>
+                            </h3>
+                            <p class="text-muted-foreground text-sm md:text-base mt-2">
+                                Preservation: 7 days<br>
+                                Calories: 160 kcal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center my-6 md:my-8">
+                <a href="#price" class="cta-button w-full max-w-md text-center">
+                    I WANT THE RECIPES!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MolhosSection -->
+    <section class="py-6 md:py-12 bg-olive-light">
+        <div class="container max-w-4xl mx-auto px-4">
+            <h2 class="section-title mb-6 md:mb-8">
+                FRESHNESS ON <b>YOUR PLATE</b> + irresistible dressings
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+                <img src="images/molho-1.webp" alt="Dressing 1" class="w-full rounded-xl md:rounded-2xl">
+                <img src="images/molho-2.webp" alt="Dressing 2" class="w-full rounded-xl md:rounded-2xl">
+                <img src="images/molho-3.webp" alt="Dressing 3" class="w-full rounded-xl md:rounded-2xl col-span-2 md:col-span-1">
+            </div>
+
+            <div class="flex justify-center mt-6 md:mt-8">
+                <a href="#price" class="cta-button w-full max-w-md text-center">
+                    I WANT THE RECIPES!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VideoPreviewSection -->
+    <section class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4">
+            <h2 class="section-title mb-6 md:mb-8">
+                WATCH THE PREVIEW<br>
+                <b>OF LESSON 1:</b>
+            </h2>
+
+            <div class="relative w-full max-w-sm mx-auto">
+                <div class="relative pb-[177.77%] rounded-2xl overflow-hidden shadow-xl bg-olive-dark">
+                    <iframe 
+                        class="absolute inset-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/2-A2chrN41w" 
+                        title="Lesson 1 Preview" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BonusSection -->
+    <section class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4">
+            <h2 class="section-title mb-6 md:mb-8">
+                ALSO RECEIVE<br>
+                <b>+ 3 exclusive bonuses:</b>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Bonus 1 -->
+                <div class="salad-card">
+                    <img src="images/bonus-1.webp" alt="DETOX SMOOTHIES" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <p class="text-olive-dark font-bold text-sm mb-1">BONUS 1:</p>
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            DETOX SMOOTHIES<br>
+                            <span class="font-normal text-base md:text-lg">20 RECIPES</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            <span class="line-through">$9.90</span>
+                            <span class="font-bold text-cta-green">FREE TODAY!</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Bonus 2 -->
+                <div class="salad-card">
+                    <img src="images/bonus-2.webp" alt="MORNING SHOTS" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <p class="text-olive-dark font-bold text-sm mb-1">BONUS 2:</p>
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            MORNING SHOTS<br>
+                            <span class="font-normal text-base md:text-lg">5 RECIPES</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            <span class="line-through">$9.90</span>
+                            <span class="font-bold text-cta-green">FREE TODAY!</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Bonus 3 -->
+                <div class="salad-card">
+                    <img src="images/bonus-3.webp" alt="INFUSED WATERS" class="w-full aspect-[4/5] object-cover">
+                    <div class="p-3 md:p-4 text-center">
+                        <p class="text-olive-dark font-bold text-sm mb-1">BONUS 3:</p>
+                        <h3 class="text-olive-dark font-bold text-lg md:text-xl leading-tight">
+                            INFUSED WATERS<br>
+                            <span class="font-normal text-base md:text-lg">15 RECIPES</span>
+                        </h3>
+                        <p class="text-muted-foreground text-sm md:text-base mt-2">
+                            <span class="line-through">$9.90</span>
+                            <span class="font-bold text-cta-green">FREE TODAY!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-6 md:mt-8">
+                <a href="#price" class="cta-button w-full max-w-md text-center">
+                    I WANT THE RECIPES!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PainSection -->
+    <section class="py-6 md:py-12 bg-olive-light">
+        <div class="container max-w-4xl mx-auto px-4">
+            <h3 class="text-olive-dark text-xl md:text-2xl text-center mb-4 md:mb-6">
+                DOES THIS HAPPEN <b>TO YOU?</b>
+            </h3>
+
+            <ul class="space-y-3 md:space-y-4 mb-6 md:mb-8 max-w-lg mx-auto">
+                <li class="flex items-start gap-3">
+                    <i data-lucide="x" class="w-5 h-5 md:w-6 md:h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                    <span class="text-olive-dark text-base md:text-lg">Too lazy to wash and chop salad every day.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="x" class="w-5 h-5 md:w-6 md:h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                    <span class="text-olive-dark text-base md:text-lg">Throws away salad before getting to use it.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="x" class="w-5 h-5 md:w-6 md:h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                    <span class="text-olive-dark text-base md:text-lg">Skips eating salad some days of the week.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="x" class="w-5 h-5 md:w-6 md:h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                    <span class="text-olive-dark text-base md:text-lg">Tired of just lettuce and tomato.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="x" class="w-5 h-5 md:w-6 md:h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                    <span class="text-olive-dark text-base md:text-lg">Already eats healthy, but fails on salads.</span>
+                </li>
+            </ul>
+
+            <h2 class="section-title mb-4 md:mb-6">
+                Then you need this:
+            </h2>
+        </div>
+    </section>
+
+    <!-- PriceSection -->
+    <section id="price" class="py-6 md:py-12">
+        <div class="container max-w-4xl mx-auto px-4">
+            <div class="salad-card overflow-hidden">
+                <!-- Product Image -->
+                <div class="p-4 flex justify-center bg-olive-light/20">
+                    <img src="images/product.webp" alt="Healthy Salads Ebook" class="w-full max-w-sm object-contain">
+                </div>
+                
+                <!-- Content -->
+                <div class="p-4 md:p-6">
+                    <!-- Title -->
+                    <h3 class="text-olive-dark font-bold text-xl md:text-3xl text-center mb-6 leading-tight">
+                        JAR SALADS + IRRESISTIBLE<br>
+                        DRESSINGS
+                    </h3>
+
+                    <!-- Bullets -->
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cta-green flex-shrink-0"></i>
+                            <span class="text-olive-dark text-sm">
+                                <span class="font-bold">+ 60</span> SALAD RECIPES
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cta-green flex-shrink-0"></i>
+                            <span class="text-olive-dark text-sm">
+                                <span class="font-bold">+</span> DRESSING RECIPES
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cta-green flex-shrink-0"></i>
+                            <span class="text-olive-dark text-sm">
+                                <span class="font-bold">+ 20</span> SMOOTHIE RECIPES
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cta-green flex-shrink-0"></i>
+                            <span class="text-olive-dark text-sm">
+                                <span class="font-bold">+ 5</span> MORNING SHOT RECIPES
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cta-green flex-shrink-0"></i>
+                            <span class="text-olive-dark text-sm">
+                                <span class="font-bold">+ 15</span> INFUSED WATER RECIPES
+                            </span>
+                        </li>
+                    </ul>
+
+                    <!-- Pricing -->
+                    <div class="text-center mb-4">
+                        <p class="text-olive-dark text-lg">
+                            From <span class="line-through text-muted-foreground">$49.00</span>…
+                        </p>
+                        <p class="text-olive-dark text-sm">for 6x of $1.99</p>
+                        <p class="text-olive-dark text-xl font-bold">or $9.90 one-time</p>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <a href="https://go.centerpag.com/PPU38CQ5RK6" class="cta-button block w-full text-center">
+                        BUY NOW!
+                    </a>
+
+                    <!-- Urgency -->
+                    <p class="text-cta-green font-bold text-xs text-center mt-4 animate-pulse">
+                        **OFFER EXPIRES TODAY**
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NutriSection -->
+    <section class="py-6 md:py-12 bg-olive-light">
+        <div class="container max-w-4xl mx-auto px-4 text-center">
+            <h2 class="section-title mb-6 md:mb-8">
+                SALADS BY NUTRITIONIST<br>
+                <b>AURORA PRADO</b>
+            </h2>
+
+            <div class="flex justify-center mb-6 md:mb-8">
+                <img src="images/nutri.webp" alt="Aurora Prado" class="w-36 h-36 md:w-64 md:h-64 rounded-full object-cover border-4 border-olive-dark">
+            </div>
+
+            <p class="text-olive-dark text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
+                My Jar Salads and Irresistible Dressings recipes have always been a hit online.
+                I decided to gather the 60 best recipes in one place and share this knowledge
+                with you too.
+            </p>
+        </div>
+    </section>
+
+    <!-- TestimonialsSection -->
+    <section class="py-8 md:py-12 overflow-hidden">
+        <div class="container max-w-4xl mx-auto">
+            <p class="text-olive-dark text-lg text-center mb-6">
+                <strong>See the messages</strong> I receive almost every day:
+            </p>
+
+            <div class="relative">
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <!-- First Set -->
+                        <div class="marquee-item"><img src="images/depo-1.webp" alt="Testimonial 1" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-2.webp" alt="Testimonial 2" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-3.webp" alt="Testimonial 3" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-4.webp" alt="Testimonial 4" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-5.webp" alt="Testimonial 5" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-6.webp" alt="Testimonial 6" class="w-48 md:w-56 rounded-2xl"></div>
+                        <!-- Second Set -->
+                        <div class="marquee-item"><img src="images/depo-1.webp" alt="Testimonial 1" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-2.webp" alt="Testimonial 2" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-3.webp" alt="Testimonial 3" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-4.webp" alt="Testimonial 4" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-5.webp" alt="Testimonial 5" class="w-48 md:w-56 rounded-2xl"></div>
+                        <div class="marquee-item"><img src="images/depo-6.webp" alt="Testimonial 6" class="w-48 md:w-56 rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQSection -->
+    <section class="py-6 md:py-12 bg-olive-light">
+        <div class="container max-w-4xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-2 md:gap-4 mb-6 md:mb-8">
+                <div class="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32"></div>
+                <h1 class="text-olive-dark text-lg md:text-3xl font-bold text-center whitespace-nowrap">
+                    FREQUENTLY ASKED QUESTIONS
+                </h1>
+                <div class="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32"></div>
+            </div>
+
+            <div class="space-y-3 md:space-y-4">
+                <!-- Item 1 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        How do I receive my recipes?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        As soon as your payment is confirmed, you get immediate access via WhatsApp and email with all 60 salad recipes, irresistible dressings, and all bonuses. Everything is available for you to download and start using right away. No waiting, no hassle. Any questions, just contact us at: contact@nutriliacastro.site and we'll help you quickly.
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Does the course have a guarantee?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Yes! You have a 7-day unconditional guarantee to test the recipes. If you don't like it for any reason, just request a refund and we'll return 100% of the amount invested. Simple as that.
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Do I need special jars?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        No need! Any jar you already have at home works perfectly. It can be plastic, glass, large or small. The important thing is that it closes well to keep the salad fresh. No need to spend extra money on equipment.
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Do the recipes include dressings?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Absolutely! All 60 recipes come with specific and delicious dressings. They are homemade dressings, easy to make and that completely transform the flavor of the salad. You'll never need to buy those expensive store-bought dressings full of preservatives again.
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        How long does the jar salad last in the fridge?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        When assembled correctly following the layering method I teach, the salad lasts 5 to 7 days fresh in the refrigerator. This means you prepare everything on Sunday and have healthy lunch or dinner ready all week. Zero waste, zero daily work.
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Can I prepare salads all at once on the weekend for the whole week?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Yes, that's exactly the method I teach! Most people prepare their salads for the entire week on Saturday or Sunday in about 30 minutes. It's much more practical than having to chop, wash and assemble salad every day. You save time, energy and never run out of healthy options during busy times.
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Can I sell jar salads? How much can I charge?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Yes you can! Many students use the recipes to sell and generate extra income. Depending on your region and ingredients, jar salads are sold between $5 and $12 per jar (sometimes even more, depending on size and add-ons). It's a smart way to turn knowledge into profit.
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Are the recipes easy to make?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Super easy! All recipes have clear instructions and simple step-by-step guides. You don't need to be an expert in the kitchen. If you know how to chop, mix and season, you can do it. The recipes were designed precisely for those who have a busy routine and don't want complications.
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Are the ingredients easy to find?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        Yes! All recipes use simple and accessible ingredients that you can find at any supermarket or grocery store. No exotic or expensive ingredients you've never heard of. Real food, with real ingredients.
+                    </div>
+                </div>
+                <!-- Item 10 -->
+                <div class="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none" data-accordion-item data-state="closed">
+                    <button class="w-full flex justify-between items-center text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base" data-accordion-trigger>
+                        Do I need a scale or specific utensils?
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+                    </button>
+                    <div class="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm hidden" data-accordion-content>
+                        You don't need any of that. You only need: Jars (the ones you already have at home), Spoons, A knife and A cutting board.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
