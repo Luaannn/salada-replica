@@ -50,27 +50,27 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-8 md:py-12 bg-olive-light">
-      <div className="container max-w-4xl mx-auto">
-        <div className="flex items-center justify-center gap-4 mb-8">
-          <div className="h-px bg-olive-dark flex-1 max-w-32" />
-          <h1 className="text-olive-dark text-2xl md:text-3xl font-bold text-center">
+    <section className="py-6 md:py-12 bg-olive-light">
+      <div className="container max-w-4xl mx-auto px-4">
+        <div className="flex items-center justify-center gap-2 md:gap-4 mb-6 md:mb-8">
+          <div className="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32" />
+          <h1 className="text-olive-dark text-lg md:text-3xl font-bold text-center whitespace-nowrap">
             DÚVIDAS FREQUENTES
           </h1>
-          <div className="h-px bg-olive-dark flex-1 max-w-32" />
+          <div className="h-px bg-olive-dark flex-1 max-w-16 md:max-w-32" />
         </div>
 
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-cream rounded-2xl px-6 border-none"
+              className="bg-cream rounded-xl md:rounded-2xl px-4 md:px-6 border-none"
             >
-              <AccordionTrigger className="text-olive-dark text-left font-medium hover:no-underline py-4">
+              <AccordionTrigger className="text-olive-dark text-left font-medium hover:no-underline py-3 md:py-4 text-sm md:text-base">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-4">
+              <AccordionContent className="text-muted-foreground pb-3 md:pb-4 text-xs md:text-sm">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

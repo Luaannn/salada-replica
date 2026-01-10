@@ -104,11 +104,11 @@
 
 @layer components {
   .cta-button {
-    @apply bg-cta-green text-white font-bold py-4 px-8 rounded-full text-lg uppercase tracking-wide shadow-lg hover:bg-cta-green-hover transition-all duration-300 hover:scale-105 hover:shadow-xl;
+    @apply bg-cta-green text-white font-bold py-4 px-8 rounded-full text-base md:text-lg uppercase tracking-wide shadow-lg hover:bg-cta-green-hover transition-all duration-300 hover:scale-105 hover:shadow-xl;
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-normal text-olive-dark text-center;
+    @apply text-xl md:text-3xl font-normal text-olive-dark text-center;
   }
 
   .section-title b {
@@ -116,15 +116,39 @@
   }
 
   .feature-icon {
-    @apply w-6 h-6 text-olive-dark;
+    @apply w-5 h-5 md:w-6 md:h-6 text-olive-dark;
   }
 
   .salad-card {
-    @apply bg-white rounded-3xl overflow-hidden shadow-lg;
+    @apply bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg;
   }
 
   .bonus-card {
-    @apply flex flex-col md:flex-row items-center gap-4 md:gap-8 bg-olive-light rounded-3xl p-4 md:p-6;
+    @apply flex flex-col items-center gap-4 bg-olive-light rounded-2xl md:rounded-3xl p-4 md:p-6;
+  }
+
+  /* Marquee animation for testimonials */
+  .marquee-container {
+    @apply overflow-hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 1rem;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-item {
+    flex-shrink: 0;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
