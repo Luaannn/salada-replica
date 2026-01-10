@@ -11,7 +11,7 @@ const VideoPreviewSection = () => {
           <div className="relative pb-[56.25%] rounded-2xl overflow-hidden shadow-xl bg-olive-dark">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/2-A2chrN41w"
               title="Prévia da Aula 1"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -12,40 +12,54 @@ const PriceSection = () => {
   return (
     <section id="price" className="py-6 md:py-12">
       <div className="container max-w-4xl mx-auto px-4">
-        <div className="bg-cream rounded-2xl md:rounded-3xl p-5 md:p-10">
-          {/* Mobile: Price first, then features | Desktop: side by side */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-            <div>
-              <ul className="space-y-2 md:space-y-3">
-                {includes.map((item, index) => (
-                  <li key={index} className="flex items-center gap-2 md:gap-3">
-                    <Check className="w-4 h-4 md:w-5 md:h-5 text-cta-green flex-shrink-0" />
-                    <span className="text-olive-dark text-sm md:text-base">
-                      <span className="font-bold">{item.quantity}</span> {item.text}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="salad-card overflow-hidden">
+          {/* Product Image */}
+          <img 
+            src="/images/product.webp" 
+            alt="Ebook Saladas Saudáveis" 
+            className="w-full aspect-video object-cover"
+          />
+          
+          {/* Content */}
+          <div className="p-4 md:p-6">
+            {/* Title */}
+            <h3 className="text-olive-dark font-bold text-xl md:text-2xl text-center mb-4">
+              EBOOK SALADAS SAUDÁVEIS
+            </h3>
 
-            <div className="text-center">
-              <h3 className="text-olive-dark text-xl md:text-3xl mb-2">
+            {/* Bullets */}
+            <ul className="space-y-2 mb-6">
+              {includes.map((item, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-cta-green flex-shrink-0" />
+                  <span className="text-olive-dark text-sm">
+                    <span className="font-bold">{item.quantity}</span> {item.text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Pricing */}
+            <div className="text-center mb-4">
+              <p className="text-olive-dark text-lg">
                 De <span className="line-through text-muted-foreground">R$129,00</span>…
-              </h3>
-              <p className="text-olive-dark text-base md:text-lg mb-1">por 6x de R$5,66</p>
-              <p className="text-olive-dark text-lg md:text-xl font-bold mb-4 md:mb-6">ou R$29,90 à vista</p>
-
-              <a 
-                href="https://conhecimentos.space/checkout" 
-                className="cta-button inline-block w-full max-w-xs"
-              >
-                COMPRAR AGORA!
-              </a>
-
-              <p className="text-cta-green font-bold text-xs md:text-sm mt-3 md:mt-4 animate-pulse">
-                **OFERTA EXPIRA HOJE**
               </p>
+              <p className="text-olive-dark text-sm">por 6x de R$5,66</p>
+              <p className="text-olive-dark text-xl font-bold">ou R$29,90 à vista</p>
             </div>
+
+            {/* CTA Button */}
+            <a 
+              href="https://conhecimentos.space/checkout" 
+              className="cta-button block w-full text-center"
+            >
+              COMPRAR AGORA!
+            </a>
+
+            {/* Urgency */}
+            <p className="text-cta-green font-bold text-xs text-center mt-4 animate-pulse">
+              **OFERTA EXPIRA HOJE**
+            </p>
           </div>
         </div>
       </div>

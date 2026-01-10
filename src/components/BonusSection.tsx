@@ -19,6 +19,28 @@ const bonuses = [
   },
 ];
 
+const BonusCard = ({ bonus, index }: { bonus: typeof bonuses[0]; index: number }) => (
+  <div className="salad-card">
+    <img 
+      src={bonus.image} 
+      alt={bonus.title} 
+      className="w-full aspect-[4/5] object-cover"
+    />
+    <div className="p-3 md:p-4 text-center">
+      <p className="text-olive-dark font-bold text-xs mb-1">BÔNUS {index + 1}:</p>
+      <h3 className="text-olive-dark font-bold text-base md:text-lg leading-tight">
+        {bonus.title}
+        <br />
+        <span className="font-normal text-sm md:text-base">{bonus.subtitle}</span>
+      </h3>
+      <p className="text-muted-foreground text-xs md:text-sm mt-2">
+        <span className="line-through">{bonus.originalPrice}</span>{" "}
+        <span className="font-bold text-cta-green">HOJE É GRÁTIS!</span>
+      </p>
+    </div>
+  </div>
+);
+
 const BonusSection = () => {
   return (
     <section className="py-6 md:py-12">
@@ -28,26 +50,9 @@ const BonusSection = () => {
           <b>+ 3 bônus exclusivos:</b>
         </h2>
 
-        <div className="space-y-4 md:space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {bonuses.map((bonus, index) => (
-            <div key={index} className="bonus-card">
-              <img 
-                src={bonus.image} 
-                alt={bonus.title} 
-                className="w-28 h-28 md:w-40 md:h-40 rounded-xl md:rounded-2xl object-cover flex-shrink-0"
-              />
-              <div className="text-center flex-1">
-                <p className="text-olive-dark font-bold text-xs md:text-sm mb-1">BÔNUS {index + 1}:</p>
-                <h3 className="text-olive-dark font-bold text-lg md:text-2xl leading-tight">
-                  {bonus.title}<br />
-                  <span className="font-normal text-base md:text-xl">{bonus.subtitle}</span>
-                </h3>
-                <p className="text-olive-dark text-sm md:text-lg mt-2">
-                  <span className="line-through text-muted-foreground">{bonus.originalPrice}</span>{" "}
-                  <span className="font-bold text-cta-green">HOJE É GRÁTIS!</span>
-                </p>
-              </div>
-            </div>
+            <BonusCard key={index} bonus={bonus} index={index} />
           ))}
         </div>
 
