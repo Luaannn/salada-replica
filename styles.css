@@ -86,3 +86,12 @@
     stroke-linecap: round;
 }
 /* Icons updated */
+
+/* FAQ Accordion Details Animation */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+/* No animation for simplicity and performance in pure CSS, but smooth rotation works */
